@@ -1,0 +1,58 @@
+
+
+#languagePart .language h4{font-size: 20px; top: 5px;}
+
+#dizajIcons, #visualIcons, #arhIcons{
+	display: none;
+	top: 100px;
+	position: absolute; width: 540px; height: 80px; left: calc(50% - 270px); 
+	z-index: 100; text-align: center;
+}
+
+#dizajIcons .dizajIcon, #visualIcons .dizajIcon, #arhIcons .dizajIcon{
+	position: relative;
+	width: 108px;
+	height: 80px;
+	display: inline-block;
+	margin-right: -4px;
+}
+
+#dizajIcons .dizajIcon img, #visualIcons .dizajIcon img, #arhIcons .dizajIcon img{
+	position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; margin: auto; max-width: 80%; max-height: 80%;transition: all .2s ease-in-out;
+}
+
+#dizajIcons .dizajIcon img:hover,
+#visualIcons .dizajIcon img:hover,
+#arhIcons .dizajIcon img:hover{
+	max-width: 90%;
+	max-height: 90%;
+	cursor: pointer;
+}
+
+@media screen and (max-width: 800px){
+	#languagePart .language h4{font-size: 16px; top: 8px;}
+	#languagePart .language:hover h4{font-size: 16px; top: 8px;}
+}
+
+@media screen and (max-width: 600px){
+	#languagePart{width: 315px;left: calc(50% - 157.5px); }
+	#languagePart .language{height: 30px;}
+	#languagePart .language h4{font-size: 12px; top: 5px;}
+	#languagePart .language:hover h4{font-size: 12px; top: 5px;}
+	#languagePart .language{width: 105px;}
+	#languagePart .language2{margin-left: 105px;}
+	#languagePart .language3{margin-left: 210px;}
+
+
+	#dizajIcons, #visualIcons, #arhIcons{
+		top: -40px;
+		width: 315px;
+		left: calc(50% - 157.5px);
+		height: 60px;
+	}
+	#dizajIcons .dizajIcon, #visualIcons .dizajIcon, #arhIcons .dizajIcon{
+		top: -20px;
+		width: 70px;
+		height: 60px;
+	}
+}

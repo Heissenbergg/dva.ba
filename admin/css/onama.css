@@ -1,0 +1,12 @@
+#sekcija{
+	position: fixed;
+	left: 260px;
+	top: 100px;
+	width: calc(100% - 260px);
+	height: calc(100% - 100px);
+}
+
+#sekcija textarea{
+	width: 30%;
+	height: 500px;
+}

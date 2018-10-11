@@ -1,0 +1,42 @@
+form{
+	position: absolute;
+	width: 400px; 
+	height: 400px;
+	left: calc(50% - 200px);
+	top: calc(50% - 250px);
+	border: 1px solid rgba(0,0,0,0.5);
+	border-radius: 5px;
+}
+
+form #loginHeader{
+	position: absolute; 
+	left: 0px; 
+	top: 0px; 
+	width: 100%;
+	height: 40px;
+
+}
+
+form #loginHeader h4{
+	position: absolute;
+	left: 20px;
+	top: 10px;
+	margin:0px;
+}
+
+form .inp{
+	position: relative;
+	left: 20px; 
+	margin-top: 60px;
+	width: calc(100% - 40px);
+	border: none;
+	background: none;
+	outline: none;
+	border-bottom: 1px solid rgba(0,0,0,0.5);
+	height: 40px;
+}
+
+form .inp2{margin-top: 30px;}
+
+form .inp3{background: grey; color:#fff; border: none;}
+form .inp3:hover{cursor: pointer;}

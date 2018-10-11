@@ -1,0 +1,73 @@
+#logo{
+	position: fixed;
+	left: 0px;
+	margin: 0px;
+	right: 0px;
+	padding: 0px;
+}
+#languagePart{position: absolute; width: 540px; height: 40px; left: calc(50% - 270px);}
+
+#languagePart .language{position: absolute;transition: all .2s ease-in-out; border-left: 1px solid #333; left: 0px; top: 0px; width: 180px; height: 40px;}
+#languagePart .language h4{margin: 0px; transition: all .3s ease-in-out; font-size: 23px; font-family: openSans; font-weight: lighter; position: absolute; left: 10px; top: 3px;}
+#languagePart .language h4 a{text-decoration: none; color: #333;}
+#languagePart .language2{margin-left: 180px;}
+#languagePart .language3{margin-left: 360px;}
+#languagePart .language:hover{border-left: 2px solid #333;}
+#languagePart .language:hover h4{left: 9px; font-size: 22px; top: 4px;}
+#languagePart .language h4:hover{cursor: pointer;}
+
+
+@media screen and (max-width: 800px){
+	#logo{
+		width: 1600px;
+		left: calc(50% - 800px);
+		top: 0px;
+	}
+	#languagePart{width: 465px;left: calc(50% - 232.5px);}
+	#languagePart .language h4{font-size: 18px; top: 6px;}
+	#languagePart .language{width: 155px;}
+	#languagePart .language2{margin-left: 155px;}
+	#languagePart .language3{margin-left: 310px;}
+}
+
+@media screen and (max-width: 800px){
+	#logo{
+		width: 1400px;
+		left: calc(50% - 700px);
+		top: 0px;
+	}
+	#languagePart{width: 390px;left: calc(50% - 195px); }
+	#languagePart .language h4{font-size: 18px; top: 6px;}
+	#languagePart .language{width: 130px;}
+	#languagePart .language2{margin-left: 130px;}
+	#languagePart .language3{margin-left: 260px;}
+}
+
+@media screen and (max-width: 600px){
+	#logo{
+		width: 1200px;
+		left: calc(50% - 585px);
+		top: 0px;
+	}
+
+	#languagePart{width: 315px;left: calc(50% - 157.5px); }
+	#languagePart .language h4{font-size: 16px; top: 9px;}
+	#languagePart .language:hover h4{ font-size: 16px; top: 9px;}
+	#languagePart .language{width: 105px;}
+	#languagePart .language2{margin-left: 105px;}
+	#languagePart .language3{margin-left: 210px;}
+}
+
+@media screen and (max-width: 500px){
+	#logo{
+		width: 960px;
+		left: calc(50% - 465px);
+		top: 0px;
+	}
+	#languagePart .language{height: 30px;}
+	#languagePart{width: 240px;left: calc(50% - 120px); }
+	#languagePart .language h4{font-size: 12px; top: 4px;}
+	#languagePart .language{width: 80px;}
+	#languagePart .language2{margin-left: 80px;}
+	#languagePart .language3{margin-left: 160px;}
+}

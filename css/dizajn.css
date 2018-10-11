@@ -1,0 +1,186 @@
+*:focus {
+    outline: 0 !important;
+    border: none;
+    background: none;
+}
+html, body{
+    height: 100%;
+    margin: 0;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    height:10px;
+}
+     
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+     
+::-webkit-scrollbar-thumb {
+    background-color: #f6f6f6;
+    outline: 1px solid slategrey;
+    border-radius: 3px;
+}
+
+#mainWrapper{
+	text-align: center;
+	position: relative;
+	left: 50px;
+	top: 100px;
+	width: calc(100% - 100px);
+	height: calc(100% - 200px);
+}
+#mainWrapper #socialIcons{bottom: -50px;}
+#mainWrapper .subwrapper{
+	position: relative;
+	left: 0px;
+	top: 0px;
+	width: 25%;
+	height: 100%;
+	display: inline-block;
+	background: #f6f6f6;
+}
+
+#mainWrapper .subwrapper2{width: 74%;}
+
+#mainWrapper .subwrapper .leftside{
+	position: relative;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 15%;
+}
+
+#mainWrapper .subwrapper .leftside img, #mainWrapper .subwrapper2 img{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	margin: auto;
+	max-width: 60%;
+	max-height: 60%;
+}
+
+
+
+#mainWrapper .subwrapper2 img{max-width: 100%; max-height: 100%;}
+
+#mainWrapper .subwrapper2 .arrows{
+	position: absolute;
+	margin: 0px;
+	left: 30px;
+	top: 0px;
+	width: 80px;
+	height: 100%;
+	outline:none;
+	border: none;
+	background: none;
+}
+#mainWrapper .subwrapper2 iframe{
+	position: absolute;
+	left: 0px;
+	top: 10%;
+	right: 0px;
+	bottom: 0px;
+	width: 100%;
+	height: 80%;
+	margin: auto;
+	display: none;
+}
+#mainWrapper .subwrapper2 #photoVideo{
+	position: absolute;
+	right: 20px;
+	bottom: 20px;
+	width: 260px;
+	height: 40px;
+	z-index: 100;
+}
+
+#mainWrapper .subwrapper2 #photoVideo .partofit{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 120px;
+	height: 40px;
+	background: rgba(0,0,0,0.4);
+	display: inline-block;
+}
+#mainWrapper .subwrapper2 #photoVideo .partofit2{left: 140px;}
+#mainWrapper .subwrapper2 #photoVideo .partofit:hover{cursor: pointer;}
+
+#mainWrapper .subwrapper2 #photoVideo .partofit p{
+	color: #fff;
+	margin: 0px;
+	margin-top: 8px;
+}
+
+#mainWrapper .subwrapper2 .arrows:hover{cursor: pointer;}
+#mainWrapper .subwrapper2 .arrows2{
+	left: calc(100% - 110px);
+}
+#mainWrapper .subwrapper2 .arrows .arrowRL{
+	position: absolute;
+	width: 80px;
+	height: 80px;
+	left: calc(50% - 40px);
+	top: calc(50% - 40px);
+	background: rgba(0,0,0,0.3);
+	outline:none;
+}
+#mainWrapper .subwrapper2 .arrows .arrowRL img{ outline:none; position: absolute; margin: 0px; width: 80%; height: 80%; left: 10%; top: 10%; }
+#mainWrapper .subwrapper .leftside1{
+	height: calc(80%);
+	overflow: auto;
+}
+#mainWrapper .subwrapper .leftside1 p{
+	margin: 0px;
+	font-family: openSans;
+	font-size: 16px;
+	margin-left: 5%;
+	width: 90%;
+	text-align: left;
+}
+
+@media screen and (max-width: 1200px){
+	#mainWrapper .subwrapper{width: 30%;}
+	#mainWrapper .subwrapper2{width: 69%;}
+	#mainWrapper .subwrapper .leftside1 p{font-size: 14px;}
+	#mainWrapper #socialIcons{position: relative;}
+}
+
+@media screen and (max-width: 1000px){
+	#mainWrapper .subwrapper{width: 90%;}
+	#mainWrapper .subwrapper1{height: auto;}
+	#mainWrapper .subwrapper .leftside img{
+		position: relative;
+		padding-bottom: 40px; 
+	}
+	#mainWrapper .subwrapper .leftside1 p{text-align: center;}
+	#mainWrapper .subwrapper2 .arrows .arrowRL{width: 60px; height: 60px; top: calc(50% - 30px)}
+
+	#mainWrapper .subwrapper2 .videoSlider{
+		bottom: 60px;
+	}
+	#mainWrapper .subwrapper2 #photoVideo{left: calc(50% - 130px);}
+}
+
+@media screen and (max-width: 800px){
+	#mainWrapper .subwrapper .leftside img{
+		max-width: 40%;
+		max-height: 40%;
+		position: relative;
+		padding-bottom: 40px; 
+	}
+	#mainWrapper{width: 100%; left: 0px;}
+	#mainWrapper .subwrapper{width: 100%;}
+	#mainWrapper .subwrapper2 .arrows{left: 15px;}
+	#mainWrapper .subwrapper2 .arrows2{left: calc(100% - 80px)}
+	#mainWrapper .subwrapper2 .arrows .arrowRL{width: 60px; height: 60px; top: calc(50% - 30px)}
+	#mainWrapper #socialIcons{bottom: 30px; padding-bottom: 40px;}
+	#mainWrapper .subwrapper2 #photoVideo{height: 30px; bottom: 50px;}
+	#mainWrapper .subwrapper2 #photoVideo .partofit{height: 30px;}
+	#mainWrapper .subwrapper2 #photoVideo .partofit p{margin-top: 3px;}
+	#mainWrapper .subwrapper2 iframe{height: 70%; top: 15%;}
+}

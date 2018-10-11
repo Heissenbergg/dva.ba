@@ -1,0 +1,86 @@
+#forma{
+	position: absolute;
+	width: 600px;
+	top: 100px;
+	left: calc(50% - 300px);
+	height: calc(100% - 100px);
+}
+
+#forma .formPart,#forma .name{
+	position: relative;
+	left: 0px;
+	top: 0px;
+	height: 40px;
+	width: 100%;
+}
+
+#forma .name{height: 20px; margin: 5px 0px;}
+#forma .textarea{
+	height: calc(100% - 500px);
+
+}
+#forma .formPart input, #forma .textarea textarea{position: absolute;font-family: openSans; font-size: 15px; outline: none; padding-left: 10px; resize: none; width: calc(100% - 10px); height: 100%; border: none; background: #dbdbdb;}
+#forma .textarea textarea{width: calc(100% - 12px)}
+#forma .textarea{background: red;}
+
+#forma .formPart #send{
+	width: 200px;
+	font-size: 16px;
+	right: 0px;
+}
+
+
+#forma #contactDetails{
+	position: absolute;
+	left: 0px;
+	bottom: 120px;
+	width: 100%;
+	height: 40px;
+}
+
+#forma #contactDetails .details{position: relative; width: 32.8%; height: 100%; display: inline-block; border-left: 1px solid #333;}
+#forma #contactDetails .details h4{
+	position: absolute; 
+	font-weight: lighter;
+	margin: 0px;
+	left: 10px;
+	top: 8px;
+}
+#forma #contactDetails .details #info{
+	top: 0px;
+}
+
+#forma #contactDetails .details #arh{
+	top: 18px;
+}
+#forma #contactDetails .details2, #forma #contactDetails .details3{margin-left: -3px;}
+
+#forma #socialIcons{bottom: 40px;}
+
+@media screen and (max-width: 800px){
+	#forma{
+		width: 500px;
+		left: calc(50% - 250px);
+	}
+}
+
+@media screen and (max-width: 550px){
+	#forma{
+		width: 90%;
+		height: auto;
+		left: 5%;
+	}	
+	#forma .textarea{height: 400px;}
+	#forma #contactDetails{top: 700px; }
+	#forma #contactDetails .details{position: absolute; left: 0px;}
+	#forma #contactDetails .details2{left: 33%;}
+	#forma #contactDetails .details3{left: 66%;}
+
+	#forma #contactDetails .details h4{font-size: 10px; top: 12px;}
+	#forma #socialIcons{
+		position: absolute;
+		top: 780px;
+		padding-bottom: 40px;
+	}
+}
+
